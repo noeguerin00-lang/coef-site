@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Ce que Coef fait de tes données : ce qui reste sur ton téléphone, ce qui part avec un compte, et tes droits.">
+<title>Coef — Politique de confidentialité</title>
+<style>
+:root{
+  --plan:#F3F1EC;--surface:#FFFFFF;--encre:#0A0A0B;--encre2:#44444B;--discret:#71717A;
+  --bordure:rgba(11,11,11,0.07);--ombre:0 10px 28px rgba(74,68,58,0.10),0 1px 2px rgba(74,68,58,0.06);
+  --accent:#0A0A0B;--sur-accent:#FFFFFF;--premium:#5B4BD6;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --plan:#000000;--surface:#1A1A1A;--encre:#FFFFFF;--encre2:#DCDCDC;--discret:#909090;
+    --bordure:rgba(255,255,255,0.055);--ombre:none;--accent:#FFFFFF;--sur-accent:#0A0A0B;--premium:#9C90F0;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--plan);color:var(--encre);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding:28px 20px 64px}
+header.site{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+header.site .marque{font-weight:700;font-size:20px;letter-spacing:-0.4px;color:var(--encre);text-decoration:none}
+header.site nav{display:flex;gap:16px;flex-wrap:wrap}
+header.site nav a{color:var(--discret);text-decoration:none;font-size:14.5px;font-weight:600}
+header.site nav a[aria-current]{color:var(--encre)}
+h1{font-size:32px;line-height:1.15;letter-spacing:-0.9px;font-weight:700;margin:0 0 10px}
+.intro{color:var(--encre2);font-size:16.5px;margin:0 0 6px}
+.note{color:var(--discret);font-size:13.5px;margin:0 0 26px}
+.groupe{font-size:12.5px;font-weight:600;letter-spacing:0.3px;color:var(--discret);margin:26px 0 7px 18px}
+.carte{background:var(--surface);border-radius:24px;padding:18px 18px;box-shadow:var(--ombre);border:1px solid var(--bordure);margin-bottom:12px}
+@media (prefers-color-scheme:light){.carte{border-color:transparent}}
+.carte h2{font-size:17px;font-weight:600;margin:0 0 8px;letter-spacing:-0.2px}
+.carte p{margin:0 0 10px;color:var(--encre)}
+.carte p:last-child{margin-bottom:0}
+.carte ul{margin:0;padding-left:20px}
+.carte li{margin:4px 0}
+a{color:inherit}
+.bouton{display:inline-block;background:var(--accent);color:var(--sur-accent);text-decoration:none;font-weight:600;
+  border-radius:28px;padding:13px 22px;margin:8px 0 4px}
+.bouton.contour{background:transparent;color:var(--encre);border:1.5px solid var(--bordure)}
+.pro{color:var(--premium);font-weight:600}
+footer.site{margin-top:44px;color:var(--discret);font-size:13px;line-height:1.7}
+footer.site a{color:var(--discret)}
+</style>
+</head>
+<body>
+<main>
+<header class="site">
+  <a class="marque" href="./">Coef</a>
+  <nav><a href="./">Accueil</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="aide.html">Aide et contact</a></nav>
+</header>
+
+<h1>Politique de confidentialité</h1>
+<p class="intro">Coef est une application de révisions pour élèves. Cette page explique, sans détour, ce que l’app fait de tes données : ce qui reste sur ton téléphone, ce qui part quand tu crées un compte, et ce que tu peux demander. Le principe : Coef fonctionne entièrement sans compte, et sans compte, rien de ce que tu saisis ne sort de ton appareil.</p>
+<p class="note">Version du 16 août 2026. Le même texte est lisible dans l’app : Réglages → À propos.</p>
+<section class="carte">
+  <h2>Qui est responsable</h2>
+  <p>Coef est développée et éditée par Noé Guérin, qui est le responsable du traitement de tes données au sens du RGPD. Pour toute question ou toute demande, écris à coef.app.contact@gmail.com.</p>
+</section>
+<section class="carte">
+  <h2>Ce qui reste sur ton téléphone</h2>
+  <p>Tout ce que tu saisis dans Coef est enregistré sur ton appareil : ton prénom, ton niveau et tes options, tes matières et leurs coefficients, tes notes, tes dates d’examens, tes séances de travail et tes réglages (thème, sons, rappels, objectif quotidien).</p>
+  <p>Sans compte, aucune de ces données ne quitte ton téléphone. Coef ne les envoie à personne, ne les analyse sur aucun serveur, et n’a aucun moyen d’y accéder. Si tu supprimes l’app, elles disparaissent avec elle.</p>
+</section>
+<section class="carte">
+  <h2>Ce qui part quand tu crées un compte</h2>
+  <p>Le compte est facultatif. Il sert à deux choses : sauvegarder tes données pour les retrouver sur un autre téléphone, et suivre la progression de tes amis.</p>
+  <p>Quand tu crées un compte, Coef envoie sur son serveur les mêmes données que celles enregistrées sur ton téléphone (prénom, niveau, matières, notes, examens, séances, réglages), ainsi que ton adresse e-mail, qui identifie ton compte. Ces données sont hébergées chez Supabase, dans un centre de données situé dans l’Union européenne, et protégées par des règles d’accès qui font que seul ton compte peut les lire.</p>
+  <p>La synchronisation n’efface jamais ce qui est sur ton téléphone : elle ajoute ce qui manque de chaque côté.</p>
+</section>
+<section class="carte">
+  <h2>Ce que voient tes amis</h2>
+  <p>Si tu ajoutes des amis, ils voient ton pseudo, ton temps de travail de la semaine et du jour, ta série de jours travaillés et ton statut Coef Pro. C’est tout.</p>
+  <p>Ils ne voient jamais tes notes, tes matières, tes moyennes ni tes dates d’examens. Cette limite est tenue par le serveur, pas seulement par l’app : même une version modifiée de Coef ne pourrait pas les lire.</p>
+</section>
+<section class="carte">
+  <h2>Sign in with Apple</h2>
+  <p>Tu peux créer ton compte avec Apple. Apple transmet alors à Coef un identifiant et, si tu l’acceptes, ton prénom et ton adresse e-mail (ou une adresse relais si tu choisis de la masquer). Coef ne reçoit rien d’autre de ton compte Apple.</p>
+</section>
+<section class="carte">
+  <h2>Coef Pro et achats</h2>
+  <p>Coef Pro est un achat intégré. Le paiement est entièrement géré par Apple : Coef ne voit ni ton moyen de paiement, ni ton numéro de carte, ni ton adresse.</p>
+  <p>Pour reconnaître ton achat et le restaurer sur un nouvel appareil, le reçu délivré par Apple est vérifié par RevenueCat, un service spécialisé, qui associe l’achat à ton compte Coef (ou à un identifiant anonyme sans compte). RevenueCat ne reçoit aucune donnée scolaire.</p>
+  <p>Concrètement, l’app demande à RevenueCat au lancement si ton achat est toujours actif : elle envoie pour cela l’identifiant de ton compte Coef, ou un identifiant anonyme si tu n’as pas de compte — jamais ton prénom, tes notes ou tes matières. En dessous de 15 ans, l’achat n’est pas proposé et l’app ne contacte pas RevenueCat du tout.</p>
+</section>
+<section class="carte">
+  <h2>Rapports de plantage</h2>
+  <p>Quand l’app plante, un rapport technique est envoyé à Sentry pour que le problème soit corrigé : version de l’app, modèle d’appareil, version d’iOS, et l’endroit du code où ça a cassé. Ces rapports ne contiennent aucun contenu scolaire — ni notes, ni matières, ni prénom — et ne servent qu’à réparer.</p>
+  <p>En dessous de 15 ans, aucun rapport n’est envoyé.</p>
+</section>
+<section class="carte">
+  <h2>Notifications</h2>
+  <p>Le rappel quotidien et le récap du dimanche sont des notifications locales : elles sont programmées par l’app sur ton téléphone. Rien n’est envoyé à un serveur pour te les faire parvenir, et tu les coupes quand tu veux dans les Réglages.</p>
+</section>
+<section class="carte">
+  <h2>Temps d’écran et blocage des distractions</h2>
+  <p>Sur iPhone, Coef peut bloquer les applications que tu choisis pendant une séance, grâce à Temps d’écran. Le choix se fait dans un sélecteur d’Apple, et Coef ne reçoit que des jetons opaques : jamais le nom des applications sélectionnées. Ces jetons restent sur ton téléphone et ne sont jamais transmis.</p>
+</section>
+<section class="carte">
+  <h2>Moins de 15 ans</h2>
+  <p>En France, en dessous de 15 ans, le consentement au traitement de données personnelles se donne avec un parent (article 45 de la loi Informatique et Libertés). Coef a choisi la voie simple : si tu as moins de 15 ans, l’app fonctionne en mode local, sans compte et sans amis. Rien ne sort de ton téléphone, et il n’y a donc rien à consentir.</p>
+  <p>Cela vaut pour tout : ni compte, ni sauvegarde, ni classement, ni achat intégré (Coef ne contacte alors pas RevenueCat), ni rapport de plantage. L’app ne parle à personne.</p>
+  <p>Toutes les autres fonctions — chrono, notes, moyennes, agenda, roulette, statistiques, série — marchent exactement pareil.</p>
+</section>
+<section class="carte">
+  <h2>Combien de temps</h2>
+  <p>Sans compte, tes données vivent sur ton téléphone tant que l’app y est.</p>
+  <p>Avec un compte, elles sont conservées sur le serveur tant que le compte existe. Tu peux supprimer ton compte depuis l’app (Réglages → Mon compte → Supprimer mon compte) : le compte, la sauvegarde et les liens d’amitié sont alors effacés du serveur, définitivement. Les données de ton téléphone, elles, restent.</p>
+</section>
+<section class="carte">
+  <h2>Tes droits</h2>
+  <p>Tu peux à tout moment : accéder à tes données et les exporter (Réglages → Exporter mes données te donne un fichier lisible avec tout ce que Coef connaît de toi) ; les rectifier (tout se modifie dans l’app) ; les supprimer (en supprimant ton compte, ou l’app) ; et t’opposer à leur traitement.</p>
+  <p>Pour exercer ces droits ou poser une question, écris à coef.app.contact@gmail.com. Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la CNIL (cnil.fr).</p>
+</section>
+<section class="carte">
+  <h2>Ce que Coef ne fait pas</h2>
+  <p>Pas de publicité. Pas de revente ni de partage de données à des fins commerciales. Pas de traçage entre applications ou sites, pas de profilage. Coef ne collecte que ce qu’il faut pour fonctionner, et le dit ici.</p>
+</section>
+<section class="carte">
+  <h2>Modifications</h2>
+  <p>Si cette politique change, la nouvelle version sera publiée dans l’app et sur cette page, avec sa date. La version en vigueur est celle du 16/08/2026.</p>
+</section>
+<p><a class="bouton" href="mailto:coef.app.contact@gmail.com?subject=Coef%20%E2%80%94%20mes%20donn%C3%A9es">Nous écrire</a></p>
+
+<footer class="site">
+  Coef — focus et moyennes · <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a><br>
+  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="aide.html">Aide et contact</a>
+</footer>
+</main>
+</body>
+</html>
