@@ -100,15 +100,14 @@ footer.site a{color:var(--discret)}
 </section>
 <section class="carte">
   <h2>Coef Max</h2>
-  <p>Coef Max ne s’achète pas : il se gagne, en ajoutant des amis et en travaillant. Il n’y a aujourd’hui <strong>aucun achat intégré</strong> dans Coef, et rien dans l’app ne te demande de payer.</p>
+  <p>Coef Max ne s’achète pas : il se gagne en invitant des amis. Il n’y a aujourd’hui <strong>aucun achat intégré</strong> dans Coef, et rien dans l’app ne te demande de payer.</p>
   <p>Les jours de Coef Max que tu gagnes sont comptés par le serveur de Coef, avec le reste de ton compte. Aucun service de paiement n’est contacté, et l’app n’envoie rien à personne pour ça.</p>
   <p>Le jour où Coef Max deviendra payant, cette page sera mise à jour <strong>avant</strong> que ce soit le cas, et elle décrira alors précisément ce qui part et où : le paiement serait géré par Apple — Coef ne verrait ni ton moyen de paiement, ni ton numéro de carte, ni ton adresse —, et un service de vérification de reçus recevrait l’identifiant de ton compte, jamais ton prénom, tes notes ni tes matières. En dessous de 15 ans, rien de tout cela ne serait proposé.</p>
 </section>
 <section class="carte">
   <h2>Rapports de plantage</h2>
-  <p>Quand l’app plante, un rapport technique est envoyé à Sentry pour que le problème soit corrigé : version de l’app, modèle d’appareil, version d’iOS, et l’endroit du code où ça a cassé. Ces rapports ne contiennent aucun contenu scolaire — ni notes, ni matières, ni prénom — et ne servent qu’à réparer. Ton adresse IP n’est pas conservée, et aucun identifiant de compte n’est joint.</p>
-  <p>Sentry est une société américaine : ces rapports techniques sortent donc de l’Union européenne (voir « Qui reçoit tes données »). Ils y sont effacés au bout de la durée que Sentry applique à ce projet.</p>
-  <p>Il n’y a pas d’interrupteur pour les couper aujourd’hui, et il faut le dire plutôt que de le taire. Deux choses les limitent quand même : ils ne portent rien de toi, et en dessous de 15 ans, aucun rapport n’est envoyé.</p>
+  <p><strong>Cette version n’envoie aucun rapport de plantage.</strong> L’app saurait le faire — le code est là —, mais elle n’est reliée à aucun service : quand elle plante, rien ne part, ni de ton téléphone ni de ton compte, que tu aies un compte ou non.</p>
+  <p>Le jour où ce sera branché, <strong>cette page sera mise à jour avant</strong> que ce soit le cas, et elle dira précisément quoi : le service s’appelle Sentry, il recevrait la version de l’app, le modèle d’appareil, la version d’iOS et l’endroit du code où ça a cassé — jamais tes notes, tes matières ni ton prénom —, la durée de conservation serait écrite ici en clair, et en dessous de 15 ans aucun rapport ne partirait.</p>
 </section>
 <section class="carte">
   <h2>Notifications</h2>
@@ -142,15 +141,15 @@ footer.site a{color:var(--discret)}
   <p>Coef ne vend rien et ne partage rien à des fins commerciales. Trois prestataires seulement voient passer quelque chose, chacun pour une tâche précise, et aucun n’a le droit de s’en servir pour autre chose.</p>
   <p><strong>Supabase</strong> héberge le serveur, la base de données et l’espace fermé des photos de profil, dans un centre de données situé <strong>dans l’Union européenne</strong>. C’est là que vit tout ce qui part de ton téléphone quand tu as un compte.</p>
   <p><strong>Expo</strong>, puis <strong>Apple</strong>, acheminent les notifications que tes amis t’envoient : ils reçoivent le jeton de ton appareil et le texte de la notification, jamais tes notes ni tes matières. Apple reçoit aussi, si tu crées ton compte avec « Sign in with Apple », de quoi te reconnaître — c’est son propre service.</p>
-  <p><strong>Sentry</strong> reçoit les rapports de plantage : version de l’app, modèle d’appareil, endroit du code, rien de scolaire.</p>
-  <p>Expo, Apple et Sentry sont des sociétés <strong>américaines</strong> : ces quelques informations techniques sortent donc de l’Union européenne. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne, prévues par les contrats de ces services — c’est le cadre que le RGPD prévoit pour ça. Tes données scolaires, elles, ne partent pas : elles restent chez Supabase, en Europe.</p>
+  <p><strong>Sentry</strong> ne reçoit rien : cette version n’envoie aucun rapport de plantage (voir « Rapports de plantage »).</p>
+  <p>Expo et Apple sont des sociétés <strong>américaines</strong> : ces quelques informations techniques sortent donc de l’Union européenne. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne, prévues par les contrats de ces services — c’est le cadre que le RGPD prévoit pour ça. Tes données scolaires, elles, ne partent pas : elles restent chez Supabase, en Europe.</p>
 </section>
 <section class="carte">
   <h2>Combien de temps</h2>
   <p>Sans compte, tes données vivent sur ton téléphone tant que l’app y est.</p>
   <p>Avec un compte, elles sont conservées sur le serveur tant que le compte existe. Tu peux supprimer ton compte depuis l’app (Réglages → Mon compte → Supprimer mon compte) : le compte, la sauvegarde et les liens d’amitié sont alors effacés du serveur, définitivement.</p>
   <p>Coef te demande ensuite ce que tu veux faire des données de <strong>ce téléphone</strong> : « Les garder » pour continuer sans compte, avec tes matières, tes notes, tes séances, tes fiches et tes cartes ; ou « Tout effacer », qui les efface ici aussi, photos de cours comprises, et rend l’app à son premier jour. Une sauvegarde iCloud ou iTunes faite avant peut, elle, en garder encore une copie — c’est ton téléphone, pas Coef, qui la tient.</p>
-  <p>Le reste, service par service : le jeton de notification de cet appareil vit tant que tu laisses les notifications allumées, et il est retiré du serveur dès que tu les coupes ou que tu supprimes ton compte. Un signalement vit tant que les deux comptes concernés existent, et disparaît avec le premier des deux. L’heure de début d’une séance, qui rend la présence en direct possible, est effacée dès que la séance s’arrête. Les rapports de plantage sont effacés par Sentry au bout de la durée qu’il applique à ce projet.</p>
+  <p>Le reste, service par service : le jeton de notification de cet appareil vit tant que tu laisses les notifications allumées, et il est retiré du serveur dès que tu les coupes ou que tu supprimes ton compte. Un signalement vit tant que les deux comptes concernés existent, et disparaît avec le premier des deux. L’heure de début d’une séance, qui rend la présence en direct possible, est effacée dès que la séance s’arrête. Quant aux rapports de plantage, il n’y a aucune durée à donner : cette version n’en envoie aucun.</p>
 </section>
 <section class="carte">
   <h2>Tes droits</h2>
