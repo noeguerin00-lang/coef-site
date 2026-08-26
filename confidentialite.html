@@ -53,50 +53,68 @@ footer.site a{color:var(--discret)}
 <main>
 <header class="site">
   <a class="marque" href="./">Coef</a>
-  <nav><a href="./">Accueil</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="aide.html">Aide et contact</a></nav>
+  <nav><a href="./">Accueil</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="conditions.html">Conditions</a><a href="aide.html">Aide et contact</a></nav>
 </header>
 
 <h1>Politique de confidentialité</h1>
 <p class="intro">Coef est une application de révisions pour élèves. Cette page explique, sans détour, ce que l’app fait de tes données : ce qui reste sur ton téléphone, ce qui part quand tu crées un compte, et ce que tu peux demander. Le principe : Coef fonctionne entièrement sans compte, et sans compte, rien de ce que tu saisis ne sort de ton appareil.</p>
-<p class="note">Version du 16 août 2026. Le même texte est lisible dans l’app : Réglages → À propos.</p>
+<p class="note">Version du 26 août 2026. Le même texte est lisible dans l’app : Réglages → À propos.</p>
 <section class="carte">
-  <h2>Qui est responsable</h2>
-  <p>Coef est développée et éditée par Noé Guérin, qui est le responsable du traitement de tes données au sens du RGPD. Pour toute question ou toute demande, écris à coef.app.contact@gmail.com.</p>
+  <h2>À qui écrire</h2>
+  <p>Pour toute question, toute demande sur tes données, ou pour signaler quelque chose : coef.app.contact@gmail.com.</p>
 </section>
 <section class="carte">
   <h2>Ce qui reste sur ton téléphone</h2>
-  <p>Tout ce que tu saisis dans Coef est enregistré sur ton appareil : ton prénom, ton niveau et tes options, tes matières et leurs coefficients, tes notes, tes dates d’examens, tes séances de travail et tes réglages (thème, sons, rappels, objectif quotidien).</p>
+  <p>Tout ce que tu saisis dans Coef est enregistré sur ton appareil : ton prénom, ton niveau et tes options, tes matières et leurs coefficients, tes notes, tes dates d’examens, tes séances de travail, tes fiches de cours et tes cartes de révision, et tes réglages (thème, sons, rappels, objectif quotidien).</p>
   <p>Sans compte, aucune de ces données ne quitte ton téléphone. Coef ne les envoie à personne, ne les analyse sur aucun serveur, et n’a aucun moyen d’y accéder. Si tu supprimes l’app, elles disparaissent avec elle.</p>
+  <p>Les photos que tu ajoutes à tes fiches restent sur ton téléphone même avec un compte : elles ne sont jamais envoyées à Coef ni à personne d’autre. C’est un choix, parce qu’une photo de cours peut montrer un nom, un visage ou une adresse. Le prix est que désinstaller l’app les efface, et qu’un nouveau téléphone ne les retrouve pas.</p>
 </section>
 <section class="carte">
   <h2>Ce qui part quand tu crées un compte</h2>
   <p>Le compte est facultatif. Il sert à deux choses : sauvegarder tes données pour les retrouver sur un autre téléphone, et suivre la progression de tes amis.</p>
-  <p>Quand tu crées un compte, Coef envoie sur son serveur les mêmes données que celles enregistrées sur ton téléphone (prénom, niveau, matières, notes, examens, séances, réglages), ainsi que ton adresse e-mail, qui identifie ton compte. Ces données sont hébergées chez Supabase, dans un centre de données situé dans l’Union européenne, et protégées par des règles d’accès qui font que seul ton compte peut les lire.</p>
+  <p>Quand tu crées un compte, Coef envoie sur son serveur les mêmes données que celles enregistrées sur ton téléphone (prénom, niveau, matières, notes, examens, séances, le texte de tes fiches et tes cartes de révision, réglages), ainsi que ton adresse e-mail, qui identifie ton compte. Ces données sont hébergées chez Supabase, dans un centre de données situé dans l’Union européenne, et protégées par des règles d’accès qui font que seul ton compte peut les lire. Les photos de tes fiches, elles, ne partent jamais.</p>
   <p>La synchronisation n’efface jamais ce qui est sur ton téléphone : elle ajoute ce qui manque de chaque côté.</p>
+  <p>S’y ajoutent les quelques informations qui n’ont de sens qu’avec des amis : ton pseudo et ton code d’ami, l’apparence de ton avatar, le cran que tu as choisi à « Ce que voient mes amis », et — pendant une séance seulement — l’heure à laquelle tu l’as commencée, pour que la présence en direct soit possible. Cette heure est effacée dès que la séance s’arrête.</p>
+  <p><strong>Ta photo de profil, si tu en mets une, part elle aussi.</strong> C’est une vraie photo, et il faut le dire clairement : elle est envoyée sur le serveur, dans un espace fermé où seuls tes amis acceptés peuvent la lire, et seulement par des liens qui expirent au bout d’une heure. Personne d’autre n’y a accès, et elle n’est jamais publique. Retirer un ami lui retire l’accès. Tu peux l’effacer quand tu veux depuis « Mon profil », et supprimer ton compte l’efface aussi. Ne rien mettre marche très bien : sans photo, Coef affiche l’initiale de ton pseudo. Les photos de tes <strong>fiches de cours</strong>, elles, ne partent jamais — c’est une autre chose, et la règle n’est pas la même.</p>
+</section>
+<section class="carte">
+  <h2>Si tu signales quelqu’un</h2>
+  <p>Quand tu signales un élève, Coef enregistre sur son serveur : ton compte, le compte visé, le motif que tu as choisi, ce que tu as éventuellement écrit, et la date. C’est le minimum pour pouvoir traiter le signalement.</p>
+  <p>Ce signalement n’est lisible que par l’administration de Coef. L’élève visé n’apprend jamais qui l’a signalé, et il n’est pas informé qu’il a été bloqué.</p>
+  <p>Le signalement disparaît si l’un des deux comptes est supprimé.</p>
+  <p>Quand tu bloques quelqu’un, Coef enregistre seulement le fait que tu l’as bloqué. La personne bloquée ne peut pas lire cette information.</p>
 </section>
 <section class="carte">
   <h2>Ce que voient tes amis</h2>
-  <p>Si tu ajoutes des amis, ils voient ton pseudo, ton temps de travail de la semaine et du jour, ta série de jours travaillés et ton statut Coef Pro. C’est tout.</p>
-  <p>Ils ne voient jamais tes notes, tes matières, tes moyennes ni tes dates d’examens. Cette limite est tenue par le serveur, pas seulement par l’app : même une version modifiée de Coef ne pourrait pas les lire.</p>
+  <p>Ils ne voient jamais tes notes, tes moyennes, la liste de tes matières, tes examens, ton âge ni ton adresse e-mail. Cette limite est tenue par le serveur, pas seulement par l’app : même une version modifiée de Coef ne pourrait pas les lire.</p>
+  <p>Ce qu’ils lisent de ton identité, c’est <strong>ton pseudo</strong>, et lui seul. Il part de ton prénom, parce qu’il faut bien commencer quelque part et que tes amis t’ont ajouté avec un code que tu leur as donné — mais c’est un choix, pas ton état civil : tu le changes quand tu veux dans Réglages → Mon profil. Ton prénom, lui, part sur le serveur avec le reste de ta sauvegarde — c’est ce qui te le rend sur un autre téléphone — mais <strong>tes amis ne le voient jamais</strong> : le serveur ne le leur laisse pas lire.</p>
+  <p>Pour le reste, c’est toi qui décides, avec trois crans (Réglages → Mon profil → « Ce que voient mes amis »). Discret : ton pseudo, ton avatar, ton statut Coef Max et ton temps de travail de la semaine — sans quoi il n’y aurait plus de classement. Normal, le réglage de départ : en plus, ton temps du jour, ta série et ton record, tes trente derniers jours jour par jour, les jours où tu as atteint ton objectif, ton meilleur créneau, ta régularité, tes badges, le fait que tu es en train de réviser, et ton activité des sept derniers jours. Ouvert : en plus, le nom de la matière que tu révises en direct, et celui de la matière principale de chacun de tes sept derniers jours, dans ton fil.</p>
+  <p>Les séances que tu ajoutes toi-même — celles que le chrono n’a pas mesurées, et celles dont tu allonges la durée après coup — comptent dans tes statistiques, ta série et ton objectif, mais pas dans le classement de tes amis. C’est le serveur qui les écarte, pour que le classement reste une question de temps réellement passé à travailler.</p>
+  <p>Le cran vaut pour tous tes amis. Tu peux en masquer un en particulier depuis sa fiche : il te voit alors comme si tu étais en Discret, et il n’en est pas informé.</p>
+  <p>Une exception, la seule : quand tu rejoins une séance « Réviser ensemble », les personnes de la salle voient ton chrono avancer pendant la séance, même en Discret. Tu l’as accepté en entrant, et ça s’arrête avec la salle.</p>
+  <p>Les défis que tu acceptes montrent à ton adversaire le temps que chacun a fait pendant le défi. Les encouragements que tu envoies (un feu, un bravo, un courage) portent ton pseudo, et rien d’autre. Un ami peut aussi être retiré à tout moment : il ne voit alors plus rien du tout.</p>
 </section>
 <section class="carte">
   <h2>Sign in with Apple</h2>
   <p>Tu peux créer ton compte avec Apple. Apple transmet alors à Coef un identifiant et, si tu l’acceptes, ton prénom et ton adresse e-mail (ou une adresse relais si tu choisis de la masquer). Coef ne reçoit rien d’autre de ton compte Apple.</p>
 </section>
 <section class="carte">
-  <h2>Coef Pro et achats</h2>
-  <p>Coef Pro est un achat intégré. Le paiement est entièrement géré par Apple : Coef ne voit ni ton moyen de paiement, ni ton numéro de carte, ni ton adresse.</p>
-  <p>Pour reconnaître ton achat et le restaurer sur un nouvel appareil, le reçu délivré par Apple est vérifié par RevenueCat, un service spécialisé, qui associe l’achat à ton compte Coef (ou à un identifiant anonyme sans compte). RevenueCat ne reçoit aucune donnée scolaire.</p>
-  <p>Concrètement, l’app demande à RevenueCat au lancement si ton achat est toujours actif : elle envoie pour cela l’identifiant de ton compte Coef, ou un identifiant anonyme si tu n’as pas de compte — jamais ton prénom, tes notes ou tes matières. En dessous de 15 ans, l’achat n’est pas proposé et l’app ne contacte pas RevenueCat du tout.</p>
+  <h2>Coef Max</h2>
+  <p>Coef Max ne s’achète pas : il se gagne, en ajoutant des amis et en travaillant. Il n’y a aujourd’hui <strong>aucun achat intégré</strong> dans Coef, et rien dans l’app ne te demande de payer.</p>
+  <p>Les jours de Coef Max que tu gagnes sont comptés par le serveur de Coef, avec le reste de ton compte. Aucun service de paiement n’est contacté, et l’app n’envoie rien à personne pour ça.</p>
+  <p>Le jour où Coef Max deviendra payant, cette page sera mise à jour <strong>avant</strong> que ce soit le cas, et elle décrira alors précisément ce qui part et où : le paiement serait géré par Apple — Coef ne verrait ni ton moyen de paiement, ni ton numéro de carte, ni ton adresse —, et un service de vérification de reçus recevrait l’identifiant de ton compte, jamais ton prénom, tes notes ni tes matières. En dessous de 15 ans, rien de tout cela ne serait proposé.</p>
 </section>
 <section class="carte">
   <h2>Rapports de plantage</h2>
-  <p>Quand l’app plante, un rapport technique est envoyé à Sentry pour que le problème soit corrigé : version de l’app, modèle d’appareil, version d’iOS, et l’endroit du code où ça a cassé. Ces rapports ne contiennent aucun contenu scolaire — ni notes, ni matières, ni prénom — et ne servent qu’à réparer.</p>
-  <p>En dessous de 15 ans, aucun rapport n’est envoyé.</p>
+  <p>Quand l’app plante, un rapport technique est envoyé à Sentry pour que le problème soit corrigé : version de l’app, modèle d’appareil, version d’iOS, et l’endroit du code où ça a cassé. Ces rapports ne contiennent aucun contenu scolaire — ni notes, ni matières, ni prénom — et ne servent qu’à réparer. Ton adresse IP n’est pas conservée, et aucun identifiant de compte n’est joint.</p>
+  <p>Sentry est une société américaine : ces rapports techniques sortent donc de l’Union européenne (voir « Qui reçoit tes données »). Ils y sont effacés au bout de la durée que Sentry applique à ce projet.</p>
+  <p>Il n’y a pas d’interrupteur pour les couper aujourd’hui, et il faut le dire plutôt que de le taire. Deux choses les limitent quand même : ils ne portent rien de toi, et en dessous de 15 ans, aucun rapport n’est envoyé.</p>
 </section>
 <section class="carte">
   <h2>Notifications</h2>
   <p>Le rappel quotidien et le récap du dimanche sont des notifications locales : elles sont programmées par l’app sur ton téléphone. Rien n’est envoyé à un serveur pour te les faire parvenir, et tu les coupes quand tu veux dans les Réglages.</p>
+  <p>Avec un compte, tes amis peuvent aussi t’envoyer trois choses qui arrivent en notification, et rien d’autre : un encouragement (un feu, un bravo, un courage), un défi, et une invitation à réviser ensemble. Pour que ce soit possible, ton téléphone enregistre auprès du serveur de Coef un jeton de notification fourni par Expo, transmis ensuite à Apple : il n’identifie que cet appareil-là et ne contient aucune donnée scolaire. L’envoi passe donc par le service de notifications d’Expo, puis par celui d’Apple — deux sociétés américaines, qui reçoivent ce jeton et le texte de la notification, jamais tes notes ni tes matières.</p>
+  <p>Si tu refuses les notifications, aucun jeton n’est enregistré et rien n’est envoyé. Tu peux aussi les couper après coup (Réglages → Sons et vibrations → « Encouragements et défis de tes amis ») : le jeton de cet appareil est alors retiré du serveur, et plus rien ne t’est envoyé. Il disparaît également avec ton compte.</p>
 </section>
 <section class="carte">
   <h2>Temps d’écran et blocage des distractions</h2>
@@ -105,17 +123,39 @@ footer.site a{color:var(--discret)}
 <section class="carte">
   <h2>Moins de 15 ans</h2>
   <p>En France, en dessous de 15 ans, le consentement au traitement de données personnelles se donne avec un parent (article 45 de la loi Informatique et Libertés). Coef a choisi la voie simple : si tu as moins de 15 ans, l’app fonctionne en mode local, sans compte et sans amis. Rien ne sort de ton téléphone, et il n’y a donc rien à consentir.</p>
-  <p>Cela vaut pour tout : ni compte, ni sauvegarde, ni classement, ni achat intégré (Coef ne contacte alors pas RevenueCat), ni rapport de plantage. L’app ne parle à personne.</p>
+  <p>Cela vaut pour tout : ni compte, ni sauvegarde, ni classement, ni rapport de plantage, ni notification envoyée par un ami. L’app ne parle à personne.</p>
   <p>Toutes les autres fonctions — chrono, notes, moyennes, agenda, roulette, statistiques, série — marchent exactement pareil.</p>
+</section>
+<section class="carte">
+  <h2>Pourquoi Coef a le droit</h2>
+  <p>Le RGPD demande de dire, pour chaque usage, ce qui l’autorise. Voici la liste, en entier.</p>
+  <p><strong>Ce qui reste sur ton téléphone</strong> : sans compte, Coef n’en fait aucun traitement de son côté — rien ne sort de l’appareil, et personne d’autre que toi n’y a accès. Ton prénom et ton niveau te sont demandés au départ parce que l’app s’en sert partout ; tout le reste est facultatif, et se change dans les Réglages.</p>
+  <p><strong>Le compte et la sauvegarde</strong> (adresse e-mail, prénom, matières, notes, examens, séances, fiches, cartes, réglages) : l’exécution du service que tu demandes en créant un compte (article 6.1.b du RGPD). Le compte est facultatif ; si tu en crées un, l’adresse e-mail devient obligatoire — c’est elle qui te rend tes données sur un autre téléphone.</p>
+  <p><strong>Les amis</strong> (pseudo, code d’ami, avatar, photo de profil, temps de travail, série, défis, salles) : le même fondement, le service que tu demandes en ajoutant un ami, dans les limites que tu fixes avec « Ce que voient mes amis ». Tout y est facultatif, la photo de profil comme le reste.</p>
+  <p><strong>La modération</strong> (signalements, blocages, filtre des pseudos) : l’intérêt légitime de Coef à protéger les élèves qui l’utilisent (article 6.1.f), qui est aussi une exigence de l’App Store. Sans ce fondement, un signalement ne pourrait pas être conservé le temps d’être traité.</p>
+  <p><strong>Les notifications de tes amis</strong> : ton consentement (article 6.1.a), donné en acceptant les notifications, et retirable à tout moment dans les Réglages sans rien perdre du reste.</p>
+  <p><strong>Les rapports de plantage</strong> : l’intérêt légitime de Coef à réparer ce qui casse (article 6.1.f). Ils ne portent aucune donnée de toi, et tu peux t’y opposer en écrivant à coef.app.contact@gmail.com.</p>
+  <p>Une précision d’honnêteté : ce texte est écrit par la personne qui développe Coef, en français simple et sans jargon. <strong>Il n’a pas été relu par un juriste.</strong> S’il te semble faux, incomplet ou obscur quelque part, écris à coef.app.contact@gmail.com : il sera corrigé.</p>
+</section>
+<section class="carte">
+  <h2>Qui reçoit tes données</h2>
+  <p>Coef ne vend rien et ne partage rien à des fins commerciales. Trois prestataires seulement voient passer quelque chose, chacun pour une tâche précise, et aucun n’a le droit de s’en servir pour autre chose.</p>
+  <p><strong>Supabase</strong> héberge le serveur, la base de données et l’espace fermé des photos de profil, dans un centre de données situé <strong>dans l’Union européenne</strong>. C’est là que vit tout ce qui part de ton téléphone quand tu as un compte.</p>
+  <p><strong>Expo</strong>, puis <strong>Apple</strong>, acheminent les notifications que tes amis t’envoient : ils reçoivent le jeton de ton appareil et le texte de la notification, jamais tes notes ni tes matières. Apple reçoit aussi, si tu crées ton compte avec « Sign in with Apple », de quoi te reconnaître — c’est son propre service.</p>
+  <p><strong>Sentry</strong> reçoit les rapports de plantage : version de l’app, modèle d’appareil, endroit du code, rien de scolaire.</p>
+  <p>Expo, Apple et Sentry sont des sociétés <strong>américaines</strong> : ces quelques informations techniques sortent donc de l’Union européenne. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne, prévues par les contrats de ces services — c’est le cadre que le RGPD prévoit pour ça. Tes données scolaires, elles, ne partent pas : elles restent chez Supabase, en Europe.</p>
 </section>
 <section class="carte">
   <h2>Combien de temps</h2>
   <p>Sans compte, tes données vivent sur ton téléphone tant que l’app y est.</p>
-  <p>Avec un compte, elles sont conservées sur le serveur tant que le compte existe. Tu peux supprimer ton compte depuis l’app (Réglages → Mon compte → Supprimer mon compte) : le compte, la sauvegarde et les liens d’amitié sont alors effacés du serveur, définitivement. Les données de ton téléphone, elles, restent.</p>
+  <p>Avec un compte, elles sont conservées sur le serveur tant que le compte existe. Tu peux supprimer ton compte depuis l’app (Réglages → Mon compte → Supprimer mon compte) : le compte, la sauvegarde et les liens d’amitié sont alors effacés du serveur, définitivement.</p>
+  <p>Coef te demande ensuite ce que tu veux faire des données de <strong>ce téléphone</strong> : « Les garder » pour continuer sans compte, avec tes matières, tes notes, tes séances, tes fiches et tes cartes ; ou « Tout effacer », qui les efface ici aussi, photos de cours comprises, et rend l’app à son premier jour. Une sauvegarde iCloud ou iTunes faite avant peut, elle, en garder encore une copie — c’est ton téléphone, pas Coef, qui la tient.</p>
+  <p>Le reste, service par service : le jeton de notification de cet appareil vit tant que tu laisses les notifications allumées, et il est retiré du serveur dès que tu les coupes ou que tu supprimes ton compte. Un signalement vit tant que les deux comptes concernés existent, et disparaît avec le premier des deux. L’heure de début d’une séance, qui rend la présence en direct possible, est effacée dès que la séance s’arrête. Les rapports de plantage sont effacés par Sentry au bout de la durée qu’il applique à ce projet.</p>
 </section>
 <section class="carte">
   <h2>Tes droits</h2>
-  <p>Tu peux à tout moment : accéder à tes données et les exporter (Réglages → Exporter mes données te donne un fichier lisible avec tout ce que Coef connaît de toi) ; les rectifier (tout se modifie dans l’app) ; les supprimer (en supprimant ton compte, ou l’app) ; et t’opposer à leur traitement.</p>
+  <p>Tu peux à tout moment : accéder à tes données et les exporter (Réglages → À propos → Exporter mes données te donne un fichier lisible avec tout ce que Coef garde sur ce téléphone) ; les rectifier (tout se modifie dans l’app) ; les supprimer (en supprimant ton compte, ou l’app) ; et t’opposer à leur traitement.</p>
+  <p>Ce fichier contient ce qui est sur <strong>ce téléphone</strong>. Pour recevoir en plus ce que le serveur garde de ton compte — ton adresse e-mail, ton pseudo, ton code d’ami, ta photo de profil, la liste de tes amis, tes défis, tes salles, tes signalements et tes jours de Coef Max —, écris à coef.app.contact@gmail.com : une copie t’est envoyée.</p>
   <p>Pour exercer ces droits ou poser une question, écris à coef.app.contact@gmail.com. Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la CNIL (cnil.fr).</p>
 </section>
 <section class="carte">
@@ -124,13 +164,19 @@ footer.site a{color:var(--discret)}
 </section>
 <section class="carte">
   <h2>Modifications</h2>
-  <p>Si cette politique change, la nouvelle version sera publiée dans l’app et sur cette page, avec sa date. La version en vigueur est celle du 16/08/2026.</p>
+  <p>Si cette politique change, la nouvelle version sera publiée dans l’app et sur cette page, avec sa date. La version en vigueur est celle du 26/08/2026.</p>
+</section>
+<section class="carte">
+  <h2>Qui est responsable</h2>
+  <p>Coef est développée et éditée par Noé Guérin, responsable du traitement de tes données au sens du RGPD. Tu peux exercer tous tes droits (accès, rectification, effacement, portabilité, opposition) en écrivant à coef.app.contact@gmail.com.</p>
 </section>
 <p><a class="bouton" href="mailto:coef.app.contact@gmail.com?subject=Coef%20%E2%80%94%20mes%20donn%C3%A9es">Nous écrire</a></p>
 
 <footer class="site">
   Coef — focus et moyennes · <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a><br>
-  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="aide.html">Aide et contact</a>
+  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="conditions.html">Conditions d’utilisation</a> · <a href="aide.html">Aide et contact</a><br>
+  Éditeur et directeur de la publication : Noé Guérin — contact : <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a>.<br>
+  Hébergeur du site : GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis.
 </footer>
 </main>
 </body>
