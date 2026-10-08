@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Installer Coef sur Android pendant le test : rejoindre les testeurs, devenir testeur, installer depuis Google Play.">
+<meta name="description" content="Installer Coef sur Android pendant le test, étape par étape.">
 <title>Coef sur Android</title>
 <style>
 :root{
@@ -47,61 +47,129 @@ a{color:inherit}
 .pro{color:var(--premium);font-weight:600}
 footer.site{margin-top:44px;color:var(--discret);font-size:13px;line-height:1.7}
 footer.site a{color:var(--discret)}
+
+.guide{max-width:520px}
+.marque{font-weight:700;font-size:20px;letter-spacing:-0.4px;margin-bottom:28px}
+.etapes{list-style:none;margin:22px 0 0;padding:0}
+.etape{display:flex;gap:14px;background:var(--surface);border-radius:24px;padding:18px;margin-bottom:12px;
+  box-shadow:var(--ombre);border:1.5px solid transparent;transition:opacity .25s,border-color .25s,background .25s}
+.pastille{flex:none;width:36px;height:36px;border-radius:18px;display:grid;place-items:center;font-weight:700;
+  background:var(--plan);color:var(--encre);transition:background .25s,color .25s}
+.coche{display:none;font-size:19px}
+.contenu{flex:1;min-width:0}
+.contenu h2{font-size:17px;font-weight:600;margin:6px 0 6px}
+.contenu p{margin:0 0 10px;color:var(--encre2)}
+.action{display:block;width:100%;text-align:center;background:var(--accent);color:var(--sur-accent);text-decoration:none;
+  font:inherit;font-weight:600;border:0;border-radius:28px;padding:14px 18px;margin-top:4px;cursor:pointer}
+.code{font-size:30px;font-weight:700;letter-spacing:4px;color:var(--encre)!important;margin:4px 0 8px!important}
+.fait{display:none;color:var(--vert)!important;font-weight:600;margin:2px 0 0!important}
+.refaire{background:none;border:0;padding:0;font:inherit;color:var(--discret);text-decoration:underline;cursor:pointer}
+.etape.verrouillee{opacity:.42}
+.etape.verrouillee .action{pointer-events:none}
+.etape.verrouillee .contenu p:not(.code){display:none}
+.etape.faite{border-color:var(--vert);background:var(--vert-fond)}
+.etape.faite .pastille{background:var(--vert);color:#fff}
+.etape.faite .numero{display:none}
+.etape.faite .coche{display:block}
+.etape.faite .action,.etape.faite .contenu p:not(.fait):not(.code){display:none}
+.etape.faite .fait{display:block}
+.fin{text-align:center;font-weight:600;font-size:18px;margin:22px 0 0}
+:root{--vert:#2F8F55;--vert-fond:#EAF5EE}
+@media (prefers-color-scheme:dark){:root{--vert:#5BC37E;--vert-fond:#13261A}}
 </style>
 </head>
 <body>
-<main>
-<header class="site">
-  <a class="marque" href="./">Coef</a>
-  <nav><a href="./">Accueil</a><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions</a><a href="aide.html">Aide et contact</a></nav>
-</header>
-
-<h1>Coef sur Android</h1>
-<p class="intro">Coef est en test sur Android. Google demande deux gestes avant de l’installer, une seule fois,
-dans cet ordre. Ensuite, Coef s’installe depuis Google Play comme n’importe quelle app.</p>
-<p class="note">Fais-le depuis ton téléphone Android, avec le compte Google de ce téléphone.</p>
-
-<section class="carte" id="code-ami" hidden>
-  <h2>Le code de ton ami : <span id="code"></span></h2>
-  <p>Une fois Coef installé et ton compte créé : onglet Amis, « Ajouter un ami », puis ce code.</p>
-</section>
-
-<section class="carte">
-  <h2>1. Rejoins les testeurs</h2>
-  <p>Touche « Rejoindre le groupe ». C’est ce qui t’ouvre le test.</p>
-  <a class="bouton" href="https://groups.google.com/g/coef-testeurs">Rejoindre les testeurs</a>
-</section>
-
-<section class="carte">
-  <h2>2. Deviens testeur</h2>
-  <p>Touche « Devenir testeur ». Si la page dit que le test n’est pas disponible, attends une minute après l’étape 1, puis réessaie.</p>
-  <a class="bouton" href="https://play.google.com/apps/testing/fr.coef.app">Devenir testeur</a>
-</section>
-
-<section class="carte">
-  <h2>3. Installe Coef</h2>
-  <p>Coef s’ouvre dans Google Play : touche « Installer ».</p>
-  <a class="bouton contour" href="https://play.google.com/store/apps/details?id=fr.coef.app">Ouvrir Google Play</a>
-</section>
-
-<p class="note">Sur iPhone ? Coef est sur l’<a href="https://apps.apple.com/app/coef/id6805438755">App Store</a>.</p>
-
-<script>
-(function () {
-  var code = new URLSearchParams(location.search).get('code') || '';
-  if (/^[A-Za-z0-9]{6}$/.test(code)) {
-    document.getElementById('code').textContent = code.toUpperCase();
-    document.getElementById('code-ami').hidden = false;
-  }
-})();
-</script>
-
+<main class="guide">
+<div class="marque">Coef</div>
+<h1>Installe Coef</h1>
+<p class="intro" id="intro">Coef est en test sur Android : quelques étapes, une seule fois. Chacune s’allume en vert quand elle est faite.</p>
+<ol class="etapes">
+  <li class="etape" data-ami="non">
+    <div class="pastille" aria-hidden="true"><span class="numero">1</span><span class="coche">✓</span></div>
+    <div class="contenu">
+      <h2>Rejoins les testeurs</h2>
+      <p>Avec le compte Google de ce téléphone, touche « Rejoindre le groupe ».</p>
+      
+      <a class="action" href="https://groups.google.com/g/coef-testeurs" target="_blank" rel="noopener">Rejoindre les testeurs</a>
+      <p class="fait">C’est fait · <button class="refaire" type="button">Refaire</button></p>
+    </div>
+  </li>
+  <li class="etape" data-ami="non">
+    <div class="pastille" aria-hidden="true"><span class="numero">2</span><span class="coche">✓</span></div>
+    <div class="contenu">
+      <h2>Deviens testeur</h2>
+      <p>Touche « Devenir testeur ». Si la page dit que le test n’est pas disponible, attends une minute et réessaie.</p>
+      
+      <a class="action" href="https://play.google.com/apps/testing/fr.coef.app" target="_blank" rel="noopener">Devenir testeur</a>
+      <p class="fait">C’est fait · <button class="refaire" type="button">Refaire</button></p>
+    </div>
+  </li>
+  <li class="etape" data-ami="non">
+    <div class="pastille" aria-hidden="true"><span class="numero">3</span><span class="coche">✓</span></div>
+    <div class="contenu">
+      <h2>Installe Coef</h2>
+      <p>Google Play s’ouvre sur Coef : touche « Installer ».</p>
+      
+      <a class="action" href="https://play.google.com/store/apps/details?id=fr.coef.app" target="_blank" rel="noopener">Ouvrir Google Play</a>
+      <p class="fait">C’est fait · <button class="refaire" type="button">Refaire</button></p>
+    </div>
+  </li>
+  <li class="etape" data-ami="oui">
+    <div class="pastille" aria-hidden="true"><span class="numero">4</span><span class="coche">✓</span></div>
+    <div class="contenu">
+      <h2>Ajoute ton ami</h2>
+      <p>Dans Coef, crée ton compte, puis onglet Amis, « Ajouter un ami » : colle ce code.</p>
+      <p class="code" id="code"></p>
+      <button class="action" type="button" id="copier">Copier le code</button>
+      <p class="fait">C’est fait · <button class="refaire" type="button">Refaire</button></p>
+    </div>
+  </li>
+</ol>
+<p class="fin" id="fin" hidden>C’est tout bon. Bonnes révisions !</p>
 <footer class="site">
-  Coef — focus et moyennes · <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a><br>
-  <a href="confidentialite.html">Politique de confidentialité</a> · <a href="conditions.html">Conditions d’utilisation</a> · <a href="aide.html">Aide et contact</a><br>
-  Éditeur et directeur de la publication : Noé Guérin — contact : <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a>.<br>
-  Hébergeur du site : GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis.
+  Sur iPhone ? Coef est sur l’<a href="https://apps.apple.com/app/coef/id6805438755">App Store</a>.<br>
+  Une question : <a href="mailto:coef.app.contact@gmail.com">coef.app.contact@gmail.com</a> · <a href="confidentialite.html">Confidentialité</a>
 </footer>
 </main>
+<script>
+(function () {
+  var CLE = 'coef-android-etapes';
+  var code = new URLSearchParams(location.search).get('code') || '';
+  code = /^[A-Za-z0-9]{6}$/.test(code) ? code.toUpperCase() : '';
+  var liste = document.querySelector('.etapes');
+  var etapes = Array.prototype.slice.call(document.querySelectorAll('.etape'));
+  // Sans code dans l'adresse, l'étape de l'ami n'a rien à montrer.
+  if (code) {
+    document.getElementById('code').textContent = code;
+    document.getElementById('intro').textContent = 'Ton ami t’invite sur Coef. Coef est en test sur Android : quelques étapes, une seule fois. Chacune s’allume en vert quand elle est faite.';
+  } else {
+    etapes.filter(function (e) { return e.dataset.ami === 'oui'; }).forEach(function (e) { liste.removeChild(e); });
+    etapes = etapes.filter(function (e) { return e.dataset.ami !== 'oui'; });
+  }
+  var faites = 0;
+  try { faites = Math.min(etapes.length, parseInt(localStorage.getItem(CLE) || '0', 10) || 0); } catch (e) {}
+  function dessiner() {
+    etapes.forEach(function (e, i) {
+      e.classList.toggle('faite', i < faites);
+      e.classList.toggle('verrouillee', i > faites);
+    });
+    document.getElementById('fin').hidden = faites < etapes.length;
+    try { localStorage.setItem(CLE, String(faites)); } catch (e) {}
+  }
+  etapes.forEach(function (e, i) {
+    var action = e.querySelector('.action');
+    action.addEventListener('click', function () {
+      if (i !== faites) return;
+      if (action.id === 'copier') {
+        try { navigator.clipboard.writeText(code); } catch (err) {}
+      }
+      // Un temps pour que le lien s'ouvre avant que l'étape ne change d'aspect.
+      setTimeout(function () { faites = i + 1; dessiner(); }, 400);
+    });
+    e.querySelector('.refaire').addEventListener('click', function () { faites = i; dessiner(); });
+  });
+  dessiner();
+})();
+</script>
 </body>
 </html>
